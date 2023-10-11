@@ -1,0 +1,169 @@
+/* chatpage.css */
+.toplevel-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content at the top on mobile */
+    min-height: 100vh; /* Ensure it takes the full height of the viewport */
+    padding: 20px;
+    overflow: hidden;
+    position: relative; /* Add relative positioning for the back button */
+  }
+  
+  .backbutton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .middle-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+  }
+  /* chatpage.css */
+
+
+.secondinput {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+  white-space: pre-wrap;
+  max-height: 200px; /* Adjust the value as needed */
+  overflow-y: auto; /* Add a vertical scrollbar if the content exceeds max-height */
+}
+
+.thirdinput {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #0f0f0f;
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+  margin-top: 15px;
+  white-space: pre-wrap;
+  max-height: 200px; /* Adjust the value as needed */
+  overflow-y: auto; /* Add a vertical scrollbar if the content exceeds max-height */
+}
+
+  .heading-description {
+    padding-top: 25px;
+  }
+  
+  .response-text {
+    margin-top: 60px;
+    margin-bottom: 25px;
+    text-align: center;
+    max-width: 100%;
+    white-space: pre-wrap;
+    font-size: 1.2rem;
+    width: auto;
+    background-color: #f8fcfb;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds the height */
+    max-height: 450px; /* Set a maximum height */
+    min-height: 250px; /* Set a minimum height */
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #0f0f0f;
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    white-space: pre-wrap;
+    max-height: 200px; /* Adjust the value as needed */
+    overflow-y: auto; /* Add vertical scrollbar if the content exceeds max-height */
+   
+  }
+  
+  .response {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px; /* Adjust padding for better mobile touch experience */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem; /* Adjust font size for better mobile readability */
+    margin-top: 20px; /* Add space between response-text and button */
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .toplevel-div {
+      justify-content: flex-start; /* Align content at the top on mobile */
+    }
+  
+    .backbutton {
+      top: 10px;
+      left: 10px;
+      font-size: 2rem;
+    }
+  
+    .middle-div {
+      margin-top: 10px;
+    }
+  
+    .response-text {
+      max-height: none; /* Remove max-height for mobile screens */
+      min-height: 100px; /* Set a minimum height for mobile screens */
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+  
+    .input-field {
+      max-height: 200px; /* Adjust the value as needed for mobile screens */
+    }
+  
+    .response {
+      padding: 12px 20px; /* Adjust padding for better mobile touch experience */
+      font-size: 1rem; /* Adjust font size for better mobile readability */
+      margin-top: 10px; /* Add space between response-text and button */
+    }
+  }
+  
+  .middle-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+  }
+  .heading-description{
+    padding-top: 25px;
+    font-size:35px;
+    font-weight: bold;
+  }
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    white-space: pre-wrap;
+    max-height: 300px; /* Adjust the value as needed */
+    overflow-y: auto; /* Add vertical scrollbar if the content exceeds max-height */
+  }
+  
+  

@@ -1,0 +1,71 @@
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px; /* Adjust the max-width for laptops */
+    width: 100%;
+    margin: 0 auto; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center vertically */
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .title-faq {
+    font-weight: bold;
+    padding-bottom: 30px;
+    color:#EAE7E1;
+  }
+  
+  /* Accordian item */
+  .accordion-item {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .accordion-item.open {
+    border: 1px solid #000000; /* Highlight the open item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Accordian header */
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color:#EAE7E1;
+  }
+  
+  /* Accordian header text */
+  .accordion-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Accordian header icon */
+  .accordion-icon {
+    font-size: 24px;
+    color: #040404;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Accordian content */
+  .accordion-content {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #EAE7E1;;
+  }
+  
+  /* Accordian content text */
+  .accordion-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+  

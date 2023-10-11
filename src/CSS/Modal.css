@@ -1,0 +1,63 @@
+/* Modal Background */
+.modalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Modal Container */
+  .modalContainer {
+    background: rgb(9, 9, 9);
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 0 2px rgb(234, 111, 193), 8px 8px 0 0 rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Close Button */
+  .titleCloseBtn button {
+    background-color: red;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+    float: right;
+    width: 20px;
+  }
+  
+  /* Title */
+  .title h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffff;
+    font-family: 'Poppins';
+  }
+  
+  /* Body */
+  .body p {
+    font-size: 16px;
+    color: #ffff;
+  }
+  
+  /* Footer (if needed) */
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Additional Styling (you can customize further) */
+  /* Center the modal on larger screens */
+  @media (min-width: 768px) {
+    .modalContainer {
+      width: 400px;
+    }
+  }
+  
