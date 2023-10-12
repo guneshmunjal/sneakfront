@@ -39,7 +39,7 @@ console.log(`hello${secondQuery + thirdQuery + fourthQuery}`)
     setresponseLoader(true)
 
     try {
-      const response = await axios.post('http://sb-ebvr.onrender.com/v1/fine_tuning/jobs/openai', {
+      const response = await axios.post('https://sb-ebvr.onrender.com/v1/fine_tuning/jobs/openai', {
         messages: [
           { role: "user", 
           content:`${query + secondQuery + thirdQuery + fourthQuery}`  }, // Include the user's query
